@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'constants.dart';
 import 'theme.dart';
 import 'screens/home.dart';
 
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'VYBE',
+      title: APP_NAME,
       theme: lightTheme,
       darkTheme: darkTheme,
       home: const HomeScreen(),

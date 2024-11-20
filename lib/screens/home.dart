@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../constants.dart';
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
@@ -12,11 +14,11 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("VYBE"),
+        title: const Text(APP_NAME),
         centerTitle: true,
       ),
       body: const Center(
-        child: Text("VYBE"),
+        child: Text(APP_NAME),
       ),
     );
   }
