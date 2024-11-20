@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'theme.dart';
 import 'screens/home.dart';
 
 void main() {
@@ -13,10 +14,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'VYBE',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
-        useMaterial3: true,
-      ),
+      theme: lightTheme,
+      darkTheme: darkTheme,
       home: const HomeScreen(),
     );
   }
